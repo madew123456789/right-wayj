@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/3e0381c4-a312-453a-a06d-22aaaffe8cb5/stock-vector-glowing-neon-line-dharma-wheel-icon-isolated-black-background-buddhism-modified.ico?v=1716615964861">
+<html translate="no">
+ <script>
+        // JavaScript to change the title
+        let titles = ["Digital Thorana 2024 🌐", "Digital Thorana 2024 🖥️", "Digital Thorana 2024 🎓", "Digital Thorana 2024 🤖"];
+        let index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 20); // Change title every 2 seconds
+    </script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=659399cbd2bb410012d24176&product=powr-social-feed' async='async'></script>
+    <script>
+        // Array of pages to cycle through
+const pages = [' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', ' 🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔ ', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔', '🆅🅸🅴🆆-🆂🅾🆄🆁🅲🅴-🅱🅻🅾🅲🅺🅴🅳 🤖✅🌐👾🚧⛔'];
+        let currentIndex = 0;
+
+        function changeURL() {
+            // Get the next page from the array
+            const nextPage = pages[currentIndex];
+
+            // Change the URL without reloading the page
+            history.pushState(null, '', nextPage);
+
+            // Update the displayed current page
+            document.getElementById('currentPage').innerText = 'Current Page: ' + nextPage;
+
+            // Update the index for the next change
+            currentIndex = (currentIndex + 1) % pages.length;
+        }
+
+        // Change the URL every 3 seconds
+        setInterval(changeURL,  100);
+
+        // Optional: Handling the back/forward buttons
+        window.onpopstate = function(event) {
+            // This will handle the URL changes via back/forward buttons
+            document.getElementById('currentPage').innerText = 'Current Page: ' + location.pathname.replace('/', '');
+        };
+    </script>
+ <script>
+        function handleKeyCommands(event) {
+            // Block and redirect for specific keys or combinations
+            if ((event.ctrlKey && event.key === 'u') ||  // Ctrl+U
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||  // Ctrl+Shift+I
+                event.key === 'F11' ||  // F11
+                event.key === 'U' ||  // U
+                event.key === 'F12' ||  // F12
+                event.key === 'PrintScreen') {  // Print Screen
+                event.preventDefault();
+                console.warn('Attempted to use blocked keys: ', event.key);
+                redirectToNewPage();
+                return false;
+            }
+
+            // Block and warn for copying source code attempts without text selection
+            if ((event.ctrlKey || event.metaKey) && event.key === 'c' && window.getSelection().toString().length === 0) {
+                console.warn('Attempted to copy without selection');
+                redirectToNewPage();
+                return false;
+            }
+        }
+
+        function redirectToNewPage() {
+            window.location.href = '/enemy.html';
+        }
+
+        document.addEventListener('keydown', handleKeyCommands);
+    </script>
+<body oncontextmenu="return false;">
+  
+
+  <style>
+  /* Prevent text selection for better security */
+  body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
+  }
+</style>
+<script>
+  // Disable right-click as soon as the script is parsed
+  (function() {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    }, { capture: true });
+  })();
+</script>
+
+<style>
+    /* Disable dragging for all elements */
+    * {
+        user-drag: none;
+        -webkit-user-drag: none; /* For Safari */
+    }
+
+    /* Optionally, allow dragging for specific elements */
+    .allow-drag {
+        user-drag: auto;
+        -webkit-user-drag: auto; /* For Safari */
+    }
+  </style>
+<body>
+    
+    <!-- Example elements -->
+    <div id="element1"></div>
+    <div id="element2" class="allow-drag"></div>
+
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+.btn-container {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  z-index: 10;
+}
+
+.btn {
+  width: 15vw; /* Adjust width and height as per your image dimensions */
+  height: auto;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <video id="video-background" autoplay loop>
+    <source id="video-source" src="https://cdn.glitch.global/9be37c4a-2913-4004-9349-d44bf65e6c0a/vesakkudu%201.mp4?v=1718349976486" type="video/mp4">
+    <!-- Add additional source elements for other formats if needed -->
+    Your browser does not support the video tag.
+  </video>
+  
+<div class="btn-container">
+  <img class="btn" src="https://cdn.glitch.global/9be37c4a-2913-4004-9349-d44bf65e6c0a/preview.png?v=1718358208595" alt="Next Background" onclick="changeBackgroundVideo()">
+</div>
+
+
+  <script>
+    function changeBackgroundVideo() {
+      var video = document.getElementById('video-background');
+      var source = document.getElementById('video-source');
+
+      // Example URLs for different videos
+      var videoUrls = [
+        "https://cdn.glitch.global/9be37c4a-2913-4004-9349-d44bf65e6c0a/vesakKudu_2.mp4?v=1718349976739",
+        // Add more video URLs as needed
+      ];
+
+      // Get random index for selecting a video
+      var randomIndex = Math.floor(Math.random() * videoUrls.length);
+
+      // Change the source URL
+      source.src = videoUrls[randomIndex];
+
+      // Load and play the new video
+      video.load();
+      video.play();
+    }
+  </script>
+    <img style="position: absolute;left: 20px; width:100px; height:auto;" 
+  <th><a href="/lanterns.html"><img src="https://cdn.glitch.global/9be37c4a-2913-4004-9349-d44bf65e6c0a/back.png?v=1718358243000" width=15%"></a></th>
+</body>
+</html>
